@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FirebasePayRoll.Add">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <StackLayout>
+                <Entry x:Name="empnum" Placeholder="Employee Number" />
+                <Entry x:Name="name" Placeholder="Employee Name" />
+                <Entry x:Name="hourwork" Placeholder="Hours Work" />
+                <Entry x:Name="empstat" Placeholder="Employee Status" />
+                <Entry x:Name="civilstat" Placeholder="Civil Status" />
+            </StackLayout>
+            
+            <StackLayout>
+                <Button Text="Add" Clicked="Addbtn"/>
+            </StackLayout>
+            
+            
+            <Button Text="Back" Clicked="HomePage"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

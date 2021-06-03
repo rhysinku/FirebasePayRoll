@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FirebasePayRoll.Update">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry x:Name="empnum" Placeholder="Employee Number" />
+            <Entry x:Name="hourwork" Placeholder="Hours Work" />
+
+            <StackLayout>
+                <Button Text="Update" Clicked="btnUpdate"/>
+                <Button Text="Home Page" Clicked="btnHome"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

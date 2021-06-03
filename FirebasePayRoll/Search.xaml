@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FirebasePayRoll.Search">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Search"/>
+            <Entry x:Name="empnum" Placeholder="Employee Number" />
+
+            <Button Text="Search" Clicked="btnSearch"/>
+
+
+            <StackLayout>
+                <Label Text="Employee Number"/>
+                <Label x:Name="number"/>
+
+                <Label Text="Employee Name"/>
+                <Label x:Name="name"/>
+
+                <Label Text="Employee Hours Work"/>
+                <Label x:Name="hourwork"/>
+
+                <Label Text="Employee Status"/>
+                <Label x:Name="empstat"/>
+
+                <Label Text="Civil Status"/>
+                <Label x:Name="civilstat"/>
+
+                <Label Text="Employee Gross"/>
+                <Label x:Name="gross"/>
+
+                <Label Text="Employee Deduction"/>
+                <Label x:Name="ddeduction"/>
+
+                <Label Text="Employee Net"/>
+                <Label x:Name="nnet"/>
+            </StackLayout>
+
+            <CollectionView x:Name="Table">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Label Text="{Binding Name}"/>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <StackLayout>
+                <Button Text="Home Page" Clicked="btnHomePage"/>
+            </StackLayout>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
